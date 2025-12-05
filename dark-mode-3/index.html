@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode : 'class',
+        theme : {
+          extend : {
+
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      #toggle:checked ~ label div.toggle-circle{
+        @apply translate-x-3;
+      }
+    </style>
+    <title>Document</title>
+    <style type="text/tailwindcss"></style>
+  </head> 
+
+  <body class="dark:bg-slate-800 dark:text-slate-100">
+    <!-- Ini dibawah bikin jadi dark mode -->
+    <!-- dark:bg-slate-800 dark:text-slate-100 -->
+    <h1
+      class="text-transparent text-6xl text-center mt-10 font-serif font-bold bg-gradient-to-b from-blue-500 via-cyan-300 to-teal-400 bg-clip-text"
+    >
+      Hello World!!
+    </h1>
+
+    <div class="flex justify-center">
+      <span class="text-sm text-slate-500 mr-2">Light</span>
+      <input type="checkbox" name="" class="hidden" id="toggle">
+      <label for="toggle">
+        <div class="w-9 h-5 bg-slate-500 rounded-full items-center p-1 flex cursor-pointer">
+          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+        </div>
+        
+      </label>
+      <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+
+    <div class="p-5 mx-auto">
+      <section class="bg-indigo-400 m-4">
+        <h2 class="bg-orange-900 mx-3">Spacing</h2>
+        <div class="m-4">Margin</div>
+      </section>
+
+      <section class="mb-10 bg-green-300 p-5">
+        <h2 class="bg-yellow-200">spacing</h2>
+        <div class="p-4">Padding</div>
+      </section>
+
+      <section
+        class="mb-10 bg-gradient-to-r from-indigo-200 via-red-300 to-yellow-300 p-5 border-red-600"
+      >
+        <h2 class="border-red-400">Gradient</h2>
+        <div class="border-red-400">Nulis apa kek terserah</div>
+      </section>
+
+      <section class="mb-10">
+        <h2>Sizing</h2>
+        <div class="w-1/2 h-1/2">Kotak 1</div>
+        <div class="max-w-xs min-h-screen">Kotak 2</div>
+      </section>
+    </div>
+
+    <section class="mb-10 font-serif mx-auto max-w-4xl">
+      <h1 class="text-4xl font-bold">
+        Belajar mengenai typhography pada tailwindcss
+      </h1>
+      <div>
+        By <a href="" class="text-gray-700 font-semibold">Ame</a> , 4 Desember
+        2025
+      </div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ratione
+        cum nulla quo, impedit recusandae numquam reprehenderit unde assumenda
+        maiores laboriosam incidunt tenetur? Ullam pariatur quia consequatur,
+        recusandae unde ipsa. Est, itaque aperiam laudantium vero deleniti
+        voluptates nulla blanditiis! Blanditiis amet non inventore possimus quod
+        eius quos praesentium mollitia hic iusto officiis repellendus, quam
+        nulla corrupti. Dolor placeat ea corrupti? Voluptates magnam deserunt
+        culpa sunt
+        <a href="" class="underline font-semibold hover:text-blue-600">vero</a>,
+        aperiam ab ex autem reiciendis quasi cupiditate laboriosam quae hic
+        earum ad, ea beatae totam ipsa omnis. Beatae, voluptates. Aspernatur
+        quos nostrum necessitatibus magni. Magnam doloremque natus dolor eius
+        omnis, tenetur necessitatibus obcaecati ex repellat facere, labore nihil
+        excepturi, quisquam consequuntur ipsa odio. Deserunt et dolorem sed
+        dicta vel vero suscipit facilis, officia porro. Officiis quidem in
+        debitis dolores nemo consequuntur alias consectetur excepturi iure
+        quaerat, dolorum, ipsam repellendus nihil perferendis. Quasi, illo
+        facilis provident reiciendis dolorem, tempore necessitatibus nobis error
+        aliquid, autem culpa!
+      </p>
+      <p class="mb-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum animi
+        laudantium dignissimos, nemo vero optio officiis perspiciatis, vel, ab
+        quibusdam quis dolorum doloremque et quae quidem quod autem laboriosam
+        itaque? Placeat dolorem tenetur maxime et commodi ducimus eum sit odio
+        nihil totam harum earum quae, modi, voluptates molestiae ad ipsum sunt
+        magnam a ullam doloremque pariatur! Delectus ab itaque eius! Illum totam
+        quasi tempore, accusamus sed tenetur quas, enim consectetur odio
+        consequuntur temporibus accusantium repudiandae quisquam fugit? Odio
+        maxime, et distinctio repudiandae quisquam omnis, eligendi autem
+        reprehenderit, rem architecto id!
+      </p>
+      <p class="italic font-thin text-xl">
+        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        autem eos ipsam facere, cupiditate accusamus, iste nihil nisi, deleniti
+        tenetur laborum. Sapiente, similique ad laborum maiores delectus
+        repudiandae et commodi. "
+      </p>
+    </section>
+
+    <div
+      class="mb-10 overflow-x-scroll max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px]"
+      style="background-image: url('/assets/map.jpg')"
+    >
+      <p class="p-5 text-2xl">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eos aut
+        nostrum, aspernatur fugiat dolores quibusdam sit. Dicta nulla aliquid
+        reiciendis, fugit saepe blanditiis officia corrupti deleniti! Voluptas,
+        tempore pariatur! Consectetur ea, facilis accusamus laboriosam quaerat
+        expedita distinctio. Provident molestiae, assumenda dolores minus
+        impedit officia reprehenderit illo quisquam eius ratione fuga at
+        voluptate cupiditate temporibus amet, quaerat quas laudantium magni?
+        Accusantium nihil tenetur vitae ut, saepe, aliquam iure mollitia facilis
+        accusamus delectus velit quas excepturi, neque ex voluptate laborum
+        provident cum porro! Perspiciatis saepe omnis praesentium cupiditate
+        ducimus ex voluptatibus. Mollitia hic nemo quam nihil cupiditate
+        adipisci sint. Id in itaque voluptate error minima, ab magni totam saepe
+        nemo eius iusto dolorum quod architecto sunt distinctio quisquam fuga
+        ipsam vel. Ipsam commodi doloribus in modi vel autem ea numquam. Iure
+        totam ea, dolorum architecto culpa voluptates molestias, aperiam
+        perferendis, aliquam ex sit! Vitae explicabo eligendi architecto
+        nesciunt repellat, debitis deleniti? Beatae, fugit. Illum, voluptatibus
+        pariatur atque neque odit dolor libero doloremque rem rerum ipsum iure
+        incidunt officia nemo vel optio assumenda fugit voluptate dignissimos
+        asperiores alias sequi. Officiis, mollitia pariatur! Corrupti fugiat
+        dignissimos ipsam dolor porro eligendi possimus excepturi cum illum,
+        quis suscipit nam, provident nostrum quam similique. Fuga consequuntur
+        officia nulla voluptates fugiat tenetur numquam veritatis debitis,
+        consequatur fugit. In dolorum alias maiores, quod ullam perspiciatis
+        voluptates eos pariatur odit blanditiis rem minima ipsa doloribus libero
+        eaque, veritatis vel iusto expedita doloremque quis inventore
+        exercitationem debitis nihil fugit. Quas. Repudiandae quasi, ducimus
+        voluptatibus tenetur earum nobis tempora impedit debitis. Provident
+        laboriosam in illo dolorem. Eum dolor nesciunt officiis quaerat amet
+        quidem, veritatis necessitatibus repellendus corrupti ducimus? Et,
+        corporis! Nostrum. Mollitia odio dolores corrupti itaque ad quidem
+        beatae asperiores recusandae debitis veniam eaque neque ullam, suscipit
+        aut sit at dicta laboriosam. Cumque perferendis molestias illum cum
+        deleniti! Pariatur, omnis voluptatum.
+      </p>
+    </div>
+
+    <div
+      class="shadow-xl shadow-teal-300 mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-center rounded-3xl border-8 border-slate-300"
+      style="background-image: url('/assets/map.jpg')"
+    >
+      <div
+        class="w-full h-full bg-blue-300 overflow-hidden border-8 mix-blend-overlay"
+      ></div>
+    </div>
+    <div
+      class="bg-blend-screen shadow-xl shadow-teal-300 mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-center rounded-3xl border-8 border-slate-300"
+      style="background-image: url('/assets/map.jpg')"
+    ></div>
+    <div
+      class="blur-sm shadow-xl shadow-teal-300 mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-center rounded-3xl border-8 border-slate-300"
+      style="background-image: url('/assets/map.jpg')"
+    ></div>
+
+    <div
+      class="flex shadow-xl shadow-teal-300 mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-center rounded-3xl border-8 border-slate-300"
+      style="background-image: url('/assets/map.jpg')"
+    >
+      <div
+        class="w-[200px] h-[200px] bg-white/50 m-auto backdrop-blur-sm"
+      ></div>
+    </div>
+
+    <button
+      class=" dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100 my-10 block mx-auto p-5 bg-cyan-400 rounded-full text-white hover:bg-cyan-600 hover:text-black active:bg-cyan-800 focus:ring-amber-400"
+    >
+      Simpan
+    </button>
+
+    <div
+      class="dark:hover:bg-slate-300  hover:bg-sky-500 max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-serif group"
+    >
+      <h5 class="group-hover:text-white font-bold text-slate-700 text-lg mb-3 dark:group-hover:text-slate-800">
+        My card
+      </h5>
+      <p class="text-slate-500 group-hover:text-white selection:text-lime-500 dark:group-hover:text-slate-800">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+        voluptatem, error voluptates quae dolorum consectetur rerum provident!
+        Nobis, quidem deleniti.
+      </p>
+    </div>
+    <div
+      class="hover:bg-sky-500 max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-serif group"
+    >
+      <h5 class="group-hover:text-white font-bold text-slate-700 text-lg mb-3">
+        My card
+      </h5>
+      <p
+        class="text-slate-500 group-hover:text-white selection:text-lime-500 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-10"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+        voluptatem, error voluptates quae dolorum consectetur rerum provident!
+        Nobis, quidem deleniti.
+      </p>
+    </div>
+    <div
+      class="hover:bg-sky-500 max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-serif group"
+    >
+      <form action="">
+        <label for="email">
+          <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+          <input
+            type="email"
+            name=""
+            placeholder="masukkan email"
+            id="email"
+            class="
+            placeholder:text-slate-400 focus:outline 
+            focus:ring-1 focus:border-cyan-500 focus:ring-sky-500 
+            px-3 py-2 border shadoow rounded w-full block text-sm invalid:text-pink-700
+             invalid:focus:ring-pink-700 invalid:focus:border-pink-700
+             peer"
+          />
+          <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email tidak valid</p>
+        </label>
+      </form>
+    </div>
+
+    <div class="grid grid-cols-3 divide-x border-8 border-red-200">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <div class="mb-96"></div>
+  </body>
+  <script>
+    const checkbox = document.querySelector('#toggle')
+    const html = document.querySelector('html')
+    checkbox.addEventListener('click',()=>{
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+    })
+  </script>
+</html>

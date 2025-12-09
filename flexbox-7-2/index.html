@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            animation: {
+              "slow-spin": "spin 3s linear infinite",
+              goyang: "goyang 1s ease-in-out infinite",
+            },
+            keyframes: {
+              wiggle: {
+                "0%,100%": { transform: "rotate(-3deg)" },
+                "50%": { transform: "rotate(3deg)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Document</title>
+    <style type="text/tailwindcss"></style>
+  </head>
+
+  <body class="dark:bg-slate-800 dark:text-slate-100">
+    <hr class="my-20 border-t-4" />
+    <div class="container px-5 mx-auto">
+     <div class="border rounded-lg shadow-lg p-10">
+      <img src="assets/map.jpg" alt="map menkrep" class="float-right ml-2" width="150px" height="150px">
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        repellat, tempore cupiditate molestiae eligendi, corrupti consectetur
+        veniam officiis vitae ducimus culpa, ipsam quia itaque fugiat unde hic
+        magnam consequatur officia.30
+      </p>
+     </div>
+    </div>
+    <hr class="my-20 border-t-4" />
+    <div class="container px-5 mx-auto">
+     <div class="border rounded-lg shadow-lg p-10 relative">
+      <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer"><span class="text-2xl m-auto">✖️</span></div>
+      <img src="assets/map.jpg" alt="map menkrep" class="float-left ml-2" width="150px" height="150px">
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        repellat, tempore cupiditate molestiae eligendi, corrupti consectetur
+        veniam officiis vitae ducimus culpa, ipsam quia itaque fugiat unde hic
+        magnam consequatur officia.30
+      </p>
+     </div>
+    </div>
+  <div class="w-10 h-10 bg-pink-200 rounded-full flex fixed bottom-10 right-10 cursor-pointer"><a href="#" class="text-xl m-auto">🔝</a></div>
+
+  <div class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3 gap-2">
+    <img class="mb-4" src="assets/map.jpg"  alt="">
+    <img class="mb-4" src="assets/map.jpg"  alt="">
+    <img class="mb-4" src="assets/map.jpg"  alt="">
+    <img class="mb-4" src="assets/map.jpg"  alt="">
+    <img class="mb-4" src="assets/map.jpg"  alt="">
+    <img class="mb-4" src="assets/map.jpg"  alt="">
+  </div>
+
+  <hr class="my-24 border-t-4">
+
+  <!-- Intinya cuma sm md lg, trus kalo ga ada breakpointnnya berarti buat mobile trus usahain kalau bikin web pakai konsep mobile first -->
+  <div class="container px-6 font-serif max-w-md mx-auto sm:max-w-xl md:max-w-5xl">
+    <h3 class="text-4xl font-bold mt-4 text-slate-800 sm:text-5xl sm:mt-6 md:text-6xl">Rian Firdani</h3>
+    <img src="/assets/map.jpg" class="mt-4 rounded-xl shadow-xl sm:mt-6 som-h-64 sm:w-full sm:object-cover sm:object-top" alt="laptop">
+    <h2 class="mt-6 sm:mt-8 sm:text-4xl text-2xl font-semibold text-slate-800">Si paling stoik</h2>
+    <p class="mt-2 text-slate-600 som:mt-4 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore consectetur nulla fugit, deleniti perferendis in repellat vitae totam et non blanditiis qui a! Eaque velit architecto cupiditate obcaecati aut.
+
+    </p>
+    <div class="mt-4 sm:mt-6">
+      <a class="inline-block px-5 py-3 bg-red-600 text-white rounded-xl shadow-lg font-semibold uppercase text-sm tracking-wider sm:text-base" href="#">Subscribe channel youtube</a>
+    </div>
+  </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>

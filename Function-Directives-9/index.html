@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            animation: {
+              "slow-spin": "spin 3s linear infinite",
+              goyang: "goyang 1s ease-in-out infinite",
+            },
+            keyframes: {
+              wiggle: {
+                "0%,100%": { transform: "rotate(-3deg)" },
+                "50%": { transform: "rotate(3deg)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Document</title>
+    <style type="text/tailwindcss"></style>
+  </head>
+
+  <body class="dark:bg-slate-800 dark:text-slate-100">
+    
+
+  <h2 class="mt-24 mb-10 text-center font-bold font-serif text-3xl text-slate-700 ">My Gallery</h2>
+
+  <div class="container mx-auto px-6 font-serif sm:flex sm:flex-wrap sm:gap-5 sm:justify-evenly">
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 mb-10 sm:w-64 md:w-80 lg:w-72">
+      <img src="assets/map.jpg" class="w-full" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-slate-700 ">Image Title</div>
+        <p class="text-slate-600 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-20 p-2 font-serif grid grid-cols-2 gap-2 md:p-4 md:grid-cols-4">
+    <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to Rian</span></h2>
+    <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">Rian Firdani</span></div>
+
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+      <div class="w-full h-full bg-[url('/assets/map.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-12 absolute transition-all duration-500"></div>
+    </div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] md:col-start-3 xl:aspect-[4/3]"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3]"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3]"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3]"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3]"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3"></div>
+    <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3"></div>
+  </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>
